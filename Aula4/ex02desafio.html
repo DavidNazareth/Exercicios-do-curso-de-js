@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sua nacionalidade</title>
+    <style>
+        body{
+            background-color: chartreuse;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <H1>Responda</H1>
+    De qual pais voce é? <input type="text" name="txt" id="pais">
+    <input type="button" value="verificar" onclick="clicar()">
+    <p id= p></p>
+    <script>
+       
+        var p = document.getElementById('p')
+        function clicar(){ 
+            var local = document.getElementById('pais')
+            var pais = String(local.value)
+            if (pais === 'Brasil'){
+                p.innerHTML= ('<p>Brasileiro</p>')
+              
+            } else {
+                p.innerHTML = ('<p>Gringo</p>')
+        }
+           }
+        
+    </script>
+</body>
+</html>
